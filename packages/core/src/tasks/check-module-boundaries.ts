@@ -4,7 +4,7 @@ import {
   Tree,
   workspaceRoot,
   Workspaces,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 
 import { relative } from 'path';
 
@@ -80,11 +80,11 @@ export async function loadModuleBoundaries(
         .calculateConfigForFile(`${root}/non-existant.ts`)
         .catch(() =>
           Promise.resolve({
-            rules: { '@nrwl/nx/enforce-module-boundaries': [] },
+            rules: { '@nx/nx/enforce-module-boundaries': [] },
           }),
         );
       const [, moduleBoundaryConfig] =
-        result.rules['@nrwl/nx/enforce-module-boundaries'] || [];
+        result.rules['@nx/nx/enforce-module-boundaries'] || [];
       return moduleBoundaryConfig?.depConstraints ?? [];
     } catch {
       return [];

@@ -1,5 +1,5 @@
-import * as devkit from '@nrwl/devkit';
-import { ExecutorContext } from '@nrwl/devkit';
+import * as devkit from '@nx/devkit';
+import { ExecutorContext } from '@nx/devkit';
 
 import * as fs from 'fs';
 

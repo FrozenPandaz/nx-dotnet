@@ -8,7 +8,7 @@ import {
   readJson,
   Tree,
   writeJson,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 
 import { DotNetClient, dotnetFactory } from '@nx-dotnet/dotnet';
 import {
@@ -70,7 +70,7 @@ function installNpmPackages(host: Tree): GeneratorCallback {
       host,
       {},
       {
-        '@nrwl/js': nxVersion,
+        '@nx/js': nxVersion,
       },
     );
   } else {

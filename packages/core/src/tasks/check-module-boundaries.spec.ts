@@ -1,5 +1,5 @@
-import { Tree, writeJson } from '@nrwl/devkit';
-import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
+import { Tree, writeJson } from '@nx/devkit';
+import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
 import * as ESLintNamespace from 'eslint';
 import * as fastGlob from 'fast-glob';
 import { vol } from 'memfs';
@@ -59,7 +59,7 @@ describe('load-module-boundaries', () => {
       .mockReturnValue({
         calculateConfigForFile: jest.fn().mockResolvedValue({
           rules: {
-            '@nrwl/nx/enforce-module-boundaries': [
+            '@nx/nx/enforce-module-boundaries': [
               1,
               { depConstraints: MOCK_BOUNDARIES },
             ],
@@ -84,7 +84,7 @@ describe('enforce-module-boundaries', () => {
     jest.spyOn(ESLintNamespace, 'ESLint').mockReturnValue({
       calculateConfigForFile: jest.fn().mockResolvedValue({
         rules: {
-          '@nrwl/nx/enforce-module-boundaries': [
+          '@nx/nx/enforce-module-boundaries': [
             1,
             { depConstraints: MOCK_BOUNDARIES },
           ],

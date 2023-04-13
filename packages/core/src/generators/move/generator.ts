@@ -10,7 +10,7 @@ import {
   removeProjectConfiguration,
   Tree,
   visitNotIgnoredFiles,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import { dirname, extname, relative } from 'path';
 import { MoveGeneratorSchema } from './schema';
 

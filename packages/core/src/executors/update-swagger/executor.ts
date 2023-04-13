@@ -4,7 +4,7 @@ import {
   ProjectConfiguration,
   readJsonFile,
   workspaceRoot,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 
 import { existsSync } from 'fs';
 import { ensureDirSync } from 'fs-extra';

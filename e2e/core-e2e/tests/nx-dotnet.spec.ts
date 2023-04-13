@@ -1,8 +1,4 @@
-import {
-  getPackageManagerCommand,
-  joinPathFragments,
-  names,
-} from '@nrwl/devkit';
+import { getPackageManagerCommand, joinPathFragments, names } from '@nx/devkit';
 import {
   checkFilesExist,
   ensureNxProject,
@@ -14,7 +10,7 @@ import {
   tmpProjPath,
   uniq,
   updateFile,
-} from '@nrwl/nx-plugin/testing';
+} from '@nx/nx-plugin/testing';
 import { runCommandUntil } from '../../utils';
 
 import { unlinkSync, writeFileSync } from 'fs';

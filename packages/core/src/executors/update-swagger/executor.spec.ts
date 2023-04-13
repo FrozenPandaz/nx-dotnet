@@ -1,5 +1,5 @@
-import { ExecutorContext } from '@nrwl/devkit';
-import * as devkit from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
+import * as devkit from '@nx/devkit';
 
 import * as fs from 'fs';
 
@@ -28,8 +28,8 @@ const options: UpdateSwaggerJsonExecutorSchema = {
 };
 
 const root = '/virtual';
-jest.mock('@nrwl/devkit', () => ({
-  ...jest.requireActual('@nrwl/devkit'),
+jest.mock('@nx/devkit', () => ({
+  ...jest.requireActual('@nx/devkit'),
   appRootPath: '/virtual',
   workspaceRoot: '/virtual',
 }));
